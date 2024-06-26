@@ -1,10 +1,9 @@
+import { prisma } from "../db.js";
 import { Router } from "express";
-import { PrismaClient } from "@prisma/client";
 import { StatusCodes } from "http-status-codes";
-import { validateGameData } from "../schemas/games";
+import { validateGameData } from "../schemas/games.js";
 
 const router = Router();
-const prisma = new PrismaClient();
 
 // Get all games
 router.get("/games", async (req, res) => {
@@ -51,7 +50,7 @@ router.post("/games", async (req, res) => {
 
   const { name, genre, description, image_url } = data;
 
-  const game = await prisma.game.create({
+  const newGame = await prisma.game.create({
     data: {
       name: name,
       genre: genre,
@@ -63,7 +62,7 @@ router.post("/games", async (req, res) => {
   return res.status(StatusCodes.CREATED).json({
     code: "GAME_CREATED",
     message: "Jogo cadastrado com sucesso.",
-    created_id: game.id,
+    createdId: newGame.id,
   });
 });
 
