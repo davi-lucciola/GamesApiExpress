@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "GamesAPI",
+    "collectionId": "522f2e48-81c9-4554-bec3-c169c1150eea",
+    "dateExported": "2024-06-26T14:24:09.859Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ab8eaefc-a13a-417d-99e8-d932a08dd72d",
+            "colId": "522f2e48-81c9-4554-bec3-c169c1150eea",
+            "containerId": "",
+            "name": "Get All Games",
+            "url": "{{localhost}}/games",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-26T13:41:39.858Z",
+            "modified": "2024-06-26T13:42:52.260Z",
+            "headers": []
+        },
+        {
+            "_id": "9a30b32e-54ee-4fa9-af02-8d5831ccddcc",
+            "colId": "522f2e48-81c9-4554-bec3-c169c1150eea",
+            "containerId": "",
+            "name": "Get Game By Id",
+            "url": "{{localhost}}/games/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-26T13:43:02.272Z",
+            "modified": "2024-06-26T13:43:16.520Z",
+            "headers": []
+        },
+        {
+            "_id": "6843c08e-e017-4f52-a387-e0e986decf51",
+            "colId": "522f2e48-81c9-4554-bec3-c169c1150eea",
+            "containerId": "",
+            "name": "Create New Game",
+            "url": "{{localhost}}/games",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-26T13:43:51.944Z",
+            "modified": "2024-06-26T14:19:40.270Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"God of War 2\",\n  \"genre\": \"Hack and Slash\",\n  \"image_url\": \"https://upload.wikimedia.org/wikipedia/pt/5/53/God_of_War_2005_capa.png\",\n  \"description\": \"Kratos é um mortal que serve ao deus da guerra Ares, um dia ares o engana e o faz matar sua familia com suas proprias mãos, então kratos busca sua vingança\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "57375182-9760-4eaf-aee3-91b9c74c9478",
+            "colId": "522f2e48-81c9-4554-bec3-c169c1150eea",
+            "containerId": "",
+            "name": "Edit an Existing Game",
+            "url": "{{localhost}}/games/3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-26T14:07:50.032Z",
+            "modified": "2024-06-26T14:21:36.260Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"God of War 2\",\n  \"genre\": \"Hack and Slash\",\n  \"image_url\": \"https://upload.wikimedia.org/wikipedia/pt/7/7e/God_of_War_2_capa.png\",\n  \"description\": \"Após matar Ares, Kratos se torna o deus da guerra e começa a conquistar a Grécia. Zeus com medo do crescimento de poder de Kratos, o confrota diretamente.\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f0641b67-7a6a-46ff-b6e7-544803d04293",
+            "colId": "522f2e48-81c9-4554-bec3-c169c1150eea",
+            "containerId": "",
+            "name": "Delete an Existing Game",
+            "url": "{{localhost}}/games/2",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-26T14:10:00.528Z",
+            "modified": "2024-06-26T14:10:26.233Z",
+            "headers": []
+        }
+    ],
+    "ref": "K6EKGdvsj7F4g_rHzOaysIDAQr_XlJdpMm-qOz4xpyJcOvhEuZ2h7sA4Hjn4KE4-wNxy67HTxywxiBvW7LGn8w"
+}
